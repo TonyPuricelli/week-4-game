@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div>
+		<h1>Crystal Collector</h1>
+	</div>
+	<div>
+		<h2>How to play</h2>
+		</br>
+		<ol>
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below.</p>
+			<div>
+				<ul>Blue</ul>
+				<ul>Green</ul>
+				<ul>Red</ul>
+				<ul>Yellow</ul>
+            </div>
+			<p>By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to the random number.</p>
+			<p>You lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		</ol>
+	</div>
+	<div>
+		<h3>Target number: <span id="randomNumber"></span></h3>
+	</div>
+	<div>
+		<h3>Wins: <span id="wins"></span></h3>
+		<h3>Losses: <span id="losses"></span></h3>
+	</div>
+	<div>
+		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+		<img src="assets/images/red.png" class=gemImage id="three" alt="Red Gem">
+		<img src="assets/images/yellow.png" class=gemImage id="four" alt="Yellow Gem">
+	</div>
+	<div>
+		<h2>Current score: <span id="score"></span></h2>
+    </div>
+    
+    <!-- links to javascript/Jquery -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
