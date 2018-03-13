@@ -63,6 +63,10 @@ $( document ).ready(function(){
     
     //resets game
     function reset() {
+        // resets and prints user tally
+        currentTally = 0;
+        $('#score').text(currentTally);
+
         // generates and prints new target number
         randomNumber = Math.floor(Math.random() * 101 + 19);
         $('#randomNumber').text(randomNumber);
@@ -73,25 +77,22 @@ $( document ).ready(function(){
         num3 = Math.floor(Math.random() * 11 + 1);
         num4 = Math.floor(Math.random() * 11 + 1);
 
-        // resets and prints user tally
-        currentTally = 0;
-        $('#finalTotal').text(currentTally);
     }
 
     //player wins
     function winGame() {
-        alert("You won!");
         wins++;
         $('#wins').text(wins);
         reset();
+        alert("You won!");
     }
     
     //player loses
     function loseGame(){
-        alert("You lose!");
         losses++;
         $('#losses').text(losses);
         reset();
+        alert("You lose!");
     }
 
     // evaluate win or lose
@@ -102,5 +103,4 @@ $( document ).ready(function(){
             loseGame();
         }
     }
-
   }); 
